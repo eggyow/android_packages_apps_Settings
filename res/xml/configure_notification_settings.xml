@@ -133,6 +133,13 @@
         android:key="advanced_section_header"
         android:title="@string/advanced_section_header">
 
+        <com.android.settings.preferences.SystemSettingSwitchPreference
+            android:key="statusbar_colored_icons"
+            android:title="@string/statusbar_colored_icons_title"
+            android:summary="@string/statusbar_colored_icons_summary"
+            android:defaultValue="false"
+            settings:position="none" />
+
         <com.android.settings.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.compact_hun.enabled"
             android:title="@string/notification_heads_up_compact_title"
@@ -145,6 +152,13 @@
             android:title="@string/qs_compact_media_player_mode_title"
             android:summary="@string/qs_compact_media_player_mode_summary"
             android:defaultValue="false"               
+            settings:position="none" />
+
+        <com.android.settings.preferences.SystemSettingSwitchPreference
+	    android:key="statusbar_notif_count"
+	    android:title="@string/statusbar_notif_count_title"
+	    android:summary="@string/statusbar_notif_count_summary"
+	    android:defaultValue="false"
             settings:position="none" />
 
         <!--Adaptive Notifications-->
